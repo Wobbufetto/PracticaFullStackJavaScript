@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario con CSS</title>
+    <style>
+        input {
+            width: 100%;
+            padding: 12px 20px;
+            box-sizing: border-box;
+            margin: 10px 0px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Formulario estilizado con css</h1>
+    <div>
+        <form action="http://localhost:3000" method="POST">
+            <label for="nombre">Nombre</label>
+            <input type="text" name="nombre" id="nombre" placeholder="Pon tu nombre aqui">
+            <label for="apellido">Apellido</label>
+            <input type="text" name="apellido" id="apellido" placeholder="Pon tu apellido aqui">
+            <label for="ciudad">Ciudad</label>
+            <select name="ciudad" id="ciudad">
+                <option disabled selected hidden>Seleccione</option>
+                <option value="Manizales">Manizales</option>
+                <option value="Medellin">Medellin</option>
+                <option value="Pereira">Pereira</option>
+                <option value="Bogota">Bogota</option>
+            </select>
+            <button type="submit">Enviar</button>
+        </form>
+    </div>
+</body>
+</html>
